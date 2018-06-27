@@ -1,0 +1,693 @@
+@font-face { 
+    font-family: "Museo-500";
+    src: url(/wp-content/themes/enfold-child/fonts/Museo-500.otf?) format("otf")
+}
+@font-face { 
+    font-family: "Museo-900";
+    src: url(/wp-content/themes/enfold-child/fonts/Museo-900.otf?) format("otf")
+}
+@font-face { 
+    font-family: "Trebuchet.ttf";
+    src: url(/wp-content/themes/enfold-child/fonts/trebuchet.ttf?) format("ttf")
+}
+@font-face {
+    font-family:'MuseoCyrl900';
+    src:url(/wp-content/themes/enfold-child/fonts/MuseoCyrl900.otf);
+    font-weight: 900;
+}
+@font-face {
+    font-family:'MuseoCyrl500';
+    src:url(/wp-content/themes/enfold-child/fonts//MuseoCyrl500.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family:'MuseoCyrl700';
+    src:url(/wp-content/themes/enfold-child/fonts/MuseoCyrl700.otf);
+    font-weight: 700;
+}
+@font-face {
+    font-family:'MuseoCyrl300';
+    src:url(/wp-content/themes/enfold-child/fonts/MuseoCyrl300.otf);
+    font-weight: 300;
+}
+@font-face {
+font-family: "TrebuchetMS"; 
+src: url("../includes/TrebuchetMS.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+@media screen and (min-width: 960px){
+	body{
+		background-color:#fff;
+	}
+	body .site{
+		margin:0 auto;
+		padding: 0;
+	}
+}
+@media screen and (min-width: 600px){
+  .site-content, .block-price, .content-partners, .block-blog{
+	font-family: "Trebuchet.ttf";
+	font-size:18px;
+	max-width: 1200px;
+}
+	.site-description{
+		margin-top: 20px;
+	}
+	.main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul{
+		text-align: right;
+	}
+	.main-navigation li a {
+		color:#991a36;
+	}
+	.main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a, .main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a{
+		color:#5e0e30;
+	}
+	.main-navigation li{	
+margin: 0;
+}
+	
+	.main-navigation li a{
+    padding: 0 20px;
+}
+	.main-navigation li a:hover,
+	.main-navigation li:hover > a{
+		color:#fff;
+		background-color: #780f34;
+	}
+	.main-navigation li a{
+		color:#780f34;
+		background-color: #fff;
+	}
+	.main-navigation li ul li a{
+		background-color: #780f34;
+		color:#fff;
+		text-align: left;
+	}
+	.main-navigation li ul li a:hover{
+		background-color: #fff;
+		color:#780f34;
+	}
+	.main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a{
+		background-color: #780f34;
+		color:#fff;
+	}
+	
+	.main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a{
+		color:#fff;
+		text-decoration: underline;
+	}
+	.widget-area{
+		float: left;
+	}
+}
+a {
+	color: #991a36;
+}
+h1.entry-title{
+	font-family:MuseoCyrl500;
+	font-size: 25pt;
+	color: #444444;
+}
+h2.entry-title{
+	font-size:42pt;
+	text-transform:uppercase;
+	color: #2d2d2d;
+	text-align: center; 
+	font-family: "Trebuchet.ttf";
+	padding: 40px 0;
+}
+h2.entry-title__white{
+	color: #fff;
+}
+.entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image{
+	border-radius: 0;
+    box-shadow: none;
+}
+.block-logo{
+	float: left;
+	margin: 0;
+    padding: 0;
+}
+
+.block-logo svg{
+	height:96px;
+}
+
+.site-header {
+    padding: 0 0 24px 0;
+    padding: 0 0 1.714285714rem 0;
+}
+.main-navigation li a{
+	font-family:MuseoCyrl500; 
+}
+
+.block-price{
+	padding: 0;
+    margin: 30px auto;
+	text-align: center;
+}
+.text-top-price, .value-price, .block-tarif, .text-top-price, .block-price-tarif, .title-item-price, .property-item-price{
+    font-family: MuseoCyrl900;
+}
+.item-price{
+	position: relative;
+    display: inline-block;
+    max-width: 355px;
+    vertical-align: top;
+    margin: 0 -2px;
+    width: 100%;
+}
+.value-price, .title-item-price, .property-item-price{
+    display: block;
+}
+/*.item-price:after{
+    content: "";
+    box-shadow: 1px 5px 10px 11px #841d1d;
+    width: 1px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}*/
+.header-item-price{
+    padding: 35px 25px;
+    background: #794248; /* Old browsers */
+background: -moz-linear-gradient(45deg, #9C182E 0%, #681330 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #9C182E 0%,#681330 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #9C182E 0%,#681330 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9C182E', endColorstr='#681330',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.body-item-price{
+    padding: 20px 25px;
+    background-color: #f2f1f1;
+    background:linear-gradient(-45deg, transparent 75px, #f2f1f1 0);
+}
+.text-top-price, .value-price, .text-top-price, .value-price-mes, .valuta {
+    color: #fff;
+}
+.value-price{
+    text-align: right;
+}
+.text-top-price, .value-price-mes, .valuta{
+    display: inline-block;
+}
+.block-tarif{
+    position: relative;
+}
+.block-price-tarif{
+    /*position: absolute;
+    bottom: -20px;
+    right: 0;*/
+	text-align: right;
+    margin-bottom: -10px;
+}
+.text-top-price, .text-top-price{
+    font-size: 16pt;
+	text-align: left;
+	display: block;
+}
+.value-price{
+    text-transform: uppercase;
+    font-size: 37pt;
+	margin: 20px 0;
+}
+.value-price-mes{
+    font-size: 28pt;
+    text-transform: uppercase;
+}
+.valuta{
+    font-size: 12pt;
+}
+.block-tarif{
+    border-top: 3px solid #fff;
+    padding: 30px 0 0 0;
+}
+.title-item-price{
+    text-align: center;
+    font-size: 33pt;
+    padding: 0 0 15px 0;
+    color: #3e3e3e;
+    text-transform: uppercase;
+}
+.property-item-price{
+    font-size: 12pt;
+    color: #3d3d3d;
+    font-family: MuseoCyrl700;
+    padding: 12px 0;
+    display: list-item;
+    margin: 0 26px;
+	text-align: left;
+}
+a.link-block-price{
+	text-align: left;
+    font-family: MuseoCyrl900!important;
+    font-size: 26pt!important;
+    color: #2d2d2d;
+    text-decoration: none!important;
+	position:relative;
+	display: block;
+	 
+}
+a.link-block-price:hover{
+	color:#97182f;
+	-webkit-transition:color 0.5s ease;
+     -moz-transition: color 0.5s ease;
+     -o-transition: color 0.5s ease;
+     transition:  color 0.5s ease;
+}
+a.link-block-price:hover:after{
+	
+	background: #97182f;
+	-webkit-transition:background 0.5s ease;
+     -moz-transition: background 0.5s ease;
+     -o-transition: background 0.5s ease;
+     transition:  background 0.5s ease;
+}
+a.link-block-price:after{	
+	content: "\f054";
+    font-family: FontAwesome;
+    font-weight: normal;
+    speak: none;
+    position: absolute;
+    top: 2px;
+    right: -15px;
+    color: #fff;
+    background-color: #2d2d2d;
+    padding: 6px 10px 5px 12px;
+    border-radius: 50%;
+}
+.text-top-price-hot {
+    font-size: 19pt
+}
+.item-price-hot{
+    margin-top: -30px; 
+        box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 18px 14px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+.header-item-price-hot .text-top-price{
+    padding-top:30px 
+}
+ @media only screen and (min-device-width: 754px) and (max-device-width: 1060px) {
+	 .item-price{
+		 width: 30%;
+	 }
+	 .title-item-price{
+		 font-size: 23pt;
+	 }
+	 .body-item-price{
+		 background: linear-gradient(-45deg, transparent 60px, #f2f1f1 0);
+	 }
+	 .link-block-price{
+		 font-size: 18pt!important;
+		 margin: 10px 0 -10px -10px;
+	 }
+	 .link-block-price:after{
+		 top: -5px;
+	 }
+    }
+@media screen and (max-width: 991px){	 
+	.right-block-header:after{
+		display: none;
+	}
+}
+
+.btn-avo {
+	font-family: 'MuseoCyrl900';
+    cursor: pointer;
+    background: #fff;
+    color: #991a36;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 15px;
+	outline: none;
+	border: none;
+}
+.width-page{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.top-header{
+	min-height: 115px;
+	margin: 0 auto;
+	padding: 0;
+    position: relative;
+	min-height: 96px;
+    background: -moz-linear-gradient(left,  #931937 0%, #650934 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #931937 0%,#650934 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #931937 0%,#650934 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#931937', endColorstr='#650934',GradientType=1 ); /* IE6-9 */
+}
+.block-logo a{
+	border:none;
+    position: relative;
+    display: block;
+    padding-top: 11px;
+	padding-bottom: 11px;
+}  
+.block-logo a:active {
+	
+	border:none!important;
+}
+.header-image{
+	 margin-top: 13px;
+}
+.site-description{
+	color: #fff;
+    font-size: 20px;
+    font-family: MuseoCyrl500;
+    text-align: center;
+	margin: 0 auto;
+    padding-top: 25px;
+    display: block;
+    
+ }
+.btn-header-popap{
+	font-family: 'MuseoCyrl900';
+    cursor: pointer;
+    background: #fff;
+    color: #991a36;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 15px;
+	display: table;
+    float: right;
+}
+.header-tel{
+	color: #fff;
+	font-size: 20px;
+    font-family: MuseoCyrl500;
+	text-decoration: none;
+	display: block;
+    margin: 15px auto;
+    text-align: right;
+}
+.main-navigation{
+	clear: both;
+	margin: 0;
+	background-color: #fff;
+}
+@media screen and (max-width: 1200px){
+	.right-block-header{
+	/*width: 75%;*/
+	}
+	.header-tel{
+		right:10%;
+	}
+	.btn-header-popap{
+		right: 70px;
+	}
+}
+@media screen and (max-width: 579px){
+	.block-logo {
+    float: none;
+    text-align: center;
+	}
+	.right-block-header{
+		width: 100%;
+		padding: 0 0 15px 0;
+	}
+}
+.block-partners{
+	background-image: url('/wp-content/themes/twentytwelve-child/img/bg-partners.jpg');
+	min-height: 356px;
+	min-height: 356px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.carusel-partners{
+	background-color:#fff;
+	padding: 10px 30px 20px;
+    border-radius: 80px;
+}
+.block-blog,
+.content-partners{
+	margin: 0 auto;
+}
+.item-block {
+    position:relative;
+    text-align: center;
+    background: #000;
+    max-width: 342px;
+	overflow: hidden;
+	margin: 20px auto;
+	height: 255px;
+}
+.item-block img{
+	width: 100%;
+}
+.block-blog p,
+.block-blog span a{
+	font-family:MuseoCyrl300;
+	font-size: 20px;
+	color: #fff
+}
+.block-blog span a{
+	display: block;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.block-blog p{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	top: 22px;
+    color: #fff;
+    max-width: 300px;
+    height: 119px;
+    display: block;
+    position: absolute;
+    left: 22px;
+	text-align: left;
+}
+span.title-blog{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    max-width: 342px;
+	width: 100%;
+    background: #6f0e36;
+    padding: 16px 20px;
+    border-top: 2px #fff solid;
+	text-align:left;
+}
+.block-blog .views{
+	        color: #8d1837;
+    font-family: MuseoCyrl500;
+    position: absolute;
+    bottom: 32px;
+    right: 22px;
+    background: #fff;
+    padding: 2px 12px;
+    border-radius: 50px;
+    font-size: 12pt;
+    text-align: center;
+    box-sizing: border-box;
+}
+.views .fa-eye{
+	display: block;
+    font-size: 25px;
+}
+/*footer*/
+footer {
+  min-height: 370px;
+  width: 100%;
+  background-color: #3e3e3e;
+}
+
+.footer-inner {
+  max-width: 1210px;
+  margin: 0 auto;
+  min-height: 320px;
+  box-sizing: border-box;
+  padding: 15px 70px;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-col-1 {
+  margin-top: 2em;
+  min-width: 270px;
+}
+.footer-col-2 {
+  margin-top: 2em;
+  min-width: 180px;
+}
+.footer-col-3 {
+   margin-top: 2em;
+  min-width: 210px;
+}
+
+.footer-title {
+  font-family: "MuseoCyrl700";
+  font-size: 18pt;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 1em 0 0 0;
+}
+
+.footer-list-element {
+  font-family: "MuseoCyrl300";
+  font-size: 12pt;
+  line-height: 26pt;
+}
+
+.footer-list-element-link {
+  color: white;
+  text-decoration: none;
+  background-color: #3e3e3e;
+  transition: all 0.1s ease-in-out;
+  border-radius: 6px;
+  line-height: 24pt;
+}
+.footer-list-element-link:hover,
+.header-tel:hover{
+  text-decoration: underline;
+	color:#fff;
+}
+
+.footer-networks {
+  height: 54px;
+  box-sizing: border-box;
+  margin-top: 1em;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.footer-networks a {
+  display: block;
+  width: 54px;
+  height: 100%;
+  margin-right: 1em;
+  border-radius: 100%;
+  transition: all 0.2s ease-out;
+}
+.footer-networks a svg {
+  height: 100%;
+}
+.footer-networks a {
+
+}
+.footer-networks a:hover {
+  box-shadow: 0 0 16px white;
+}
+
+.footer-copyright {
+  width: 100%;
+  height: 50px;
+  background-color: #262626;
+}
+
+.copyright-inner {
+  max-width: 1210px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 70px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.copyright-col-1, .copyright-col-2, .copyright-col-3 {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+.copyright-1 {
+  font-family: "MuseoCyrl300";
+  font-style: italic;
+  font-size: 14pt;
+}
+.copyright-2 {
+  font-family: "MuseoCyrl300";
+  font-size: 14pt;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .copyright-inner {
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+  }
+  .copyright-col-1, .copyright-col-2, .copyright-col-3 {
+    width: auto;
+    margin: 0 auto;
+}
+}
+@media screen and (max-width: 550px) {
+  .footer-networks {
+    justify-content: space-around;
+  }
+  .footer-inner {
+    padding: 15px 30px;
+    margin: 0;
+  }
+  .footer-copyright {
+    width: 100%;
+    height: 80px;
+    background-color: #262626;
+    text-align: center;
+  }
+}
+.widget-area .widget a:visited{
+	color: #444444;
+}
+.widget-area .widget a{
+	color: #444444;
+	font-size: 14pt;
+	font-family:TrebuchetMS;
+}
+.widget-area .widget a:hover{
+	color: #b22359;
+	text-decoration: underline;
+}
+.widget-area .widget a.active{
+	color: #b22359;
+	text-decoration: underline;
+}
+.category-poct-content{
+	margin: 35px
+}
+.item-block-cat-post {
+    display: inline-block;
+    width: 350px;
+    vertical-align: top;
+}
+h2.title-category-post{
+	font-family: "TrebuchetMS";
+	font-size: 20pt;
+}
+.title-category-post a{
+	color: #444444;
+}
+span.views-post-category {
+    display: block;
+    text-align: right;
+    margin-top: -20px;
+	color: #767676;
+}
+span.category-post-data {
+    padding: 5px;
+    display: block;
+    font-size: 15px;
+	color: #767676;
+}
+.item-block-cat-post .entry-content{
+	margin: 0 10px;
+	color: #444444;
+}
+.morelink a {
+    text-align: right;
+    color: #4d6fff;
+}
